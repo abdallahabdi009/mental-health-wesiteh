@@ -1,0 +1,50 @@
+body{
+    font-family: Arial, sans-serif;
+    margin:20px;
+    line-height:1.6;
+}
+body{
+    background-color: peachpuff;
+}
+.container{
+    width:100%;
+    overflow:auto;
+}
+
+.menu{
+    width:25%;
+    float:left;
+}
+
+.content{
+    width:75%;
+    float:left;
+    padding-left:20px;
+}
+
+.menu a{
+    display:block;
+    margin-bottom:10px;
+    text-decoration:none;
+    color:#0066cc;
+}
+
+.menu a:hover{
+    text-decoration: underline;
+}
+
+.nhs-logo {
+    float: right;
+margin-left: 20px;
+}
+a:hover {
+    color: #0077cc;
+}
+h2, p, ul{
+    margin-bottom: 15px;
+}
+input[type="reset"]{
+    background: #eeeeee;
+    color: black;
+    border: 1px solid #999;
+}

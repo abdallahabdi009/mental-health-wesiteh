@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Task 1d - Light Switch</title>
+    <style>
+        /* The glass part of the bulb */
+        #lightbulb {
+            width: 100px;
+            height: 130px;
+            background-color: gray;
+            border-radius: 50% 50% 45% 45%;
+            margin-top: 20px;
+        }
+
+        /* The screw base underneath */
+        #screw {
+            width: 60px;
+            height: 30px;
+            background-color: #888;
+            margin-left: 20px;
+            border-radius: 0 0 10px 10px;
+        }
+    </style>
+    <script>
+        // Function to turn the light ON
+        function turnOn() {
+            document.getElementById("lightbulb").style.backgroundColor = "yellow";
+        }
+
+        // Function to turn the light OFF
+        function turnOff() {
+            document.getElementById("lightbulb").style.backgroundColor = "gray";
+        }
+    </script>
+</head>
+<body>
+
+<h1>Task 1d: Light Switch Special Effect</h1>
+
+<p>Click the buttons to turn the light on and off.</p>
+
+<button onclick="turnOn()">Turn ON</button>
+<button onclick="turnOff()">Turn OFF</button>
+
+<div id="lightbulb"></div>
+<div id="screw"></div>
+
+</body>
+</html>
+

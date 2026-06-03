@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Task 1b - Move Object</title>
+    <style>
+        #box {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: relative;
+            left: 0px;
+            margin-top: 20px;
+        }
+    </style>
+    <script>
+        // Function that moves the box to the right
+        function moveBox() {
+            document.getElementById("box").style.left = "300px";
+        }
+
+        // Function that moves the box back to the start
+        function moveBoxBack() {
+            document.getElementById("box").style.left = "0px";
+        }
+    </script>
+</head>
+<body>
+
+<h1>Task 1b: Move an Object</h1>
+
+<p>Click the buttons to move the red box.</p>
+
+<button onclick="moveBox()">Move right</button>
+<button onclick="moveBoxBack()">Move back</button>
+
+<div id="box"></div>
+
+</body>
+</html>

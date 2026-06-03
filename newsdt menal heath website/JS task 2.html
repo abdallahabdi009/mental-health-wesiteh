@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Task 2 - Event Handlers</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    #hoverTip {
+      color: black;
+      font-size: 18px;
+      padding: 10px;
+      border: 1px solid gray;
+      width: 400px;
+    }
+  </style>
+  <script>
+    // onLoad — runs when page loads
+    function pageLoaded() {
+      alert("Welcome to the Mental Health Awareness Website.");
+    }
+
+    // onUnload — runs when user leaves the page
+    function pageLeaving() {
+      alert("Take care of yourself. Goodbye!");
+    }
+
+    // onClick — runs when button is clicked
+    function showTip() {
+      alert("Remember: it's okay to ask for help.");
+    }
+
+    // onMouseOver — runs when mouse hovers over text
+    function changeColour() {
+      document.getElementById("hoverTip").style.color = "blue";
+    }
+
+    // onSubmit — runs when the form is submitted
+    function formSubmitted() {
+      alert("Thank you for sharing. Your response has been received.");
+      return false;
+    }
+
+    // onSelect — runs when user selects text in the input
+    function textSelected() {
+      alert("You selected text in the input box.");
+    }
+  </script>
+</head>
+
+<body onload="pageLoaded()" onunload="pageLeaving()">
+
+<h1><u>Mental Health Awareness — Event Handlers</u></h1>
+
+<p>This page demonstrates the use of JavaScript event handlers.</p>
+
+<h2>onClick</h2>
+<button onclick="showTip()">Click for a wellbeing tip</button>
+
+<h2>onMouseOver</h2>
+<p id="hoverTip" onmouseover="changeColour()">Hover over this text to change its colour.</p>
+
+<h2>onSubmit and onSelect</h2>
+<form onsubmit="return formSubmitted()">
+  <p>How are you feeling today?</p>
+  <input type="text" onselect="textSelected()">
+  <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>

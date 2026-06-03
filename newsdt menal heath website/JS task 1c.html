@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Task 1c - Hide/Show Form</title>
+  <script>
+    // Function to hide the form
+    function hideForm() {
+      document.getElementById("myForm").style.display = "none";
+    }
+
+    // Function to show the form
+    function showForm() {
+      document.getElementById("myForm").style.display = "block";
+    }
+  </script>
+</head>
+<body>
+
+<h1>Task 1c: Hide and Show a Form</h1>
+
+<p>Click the buttons to hide or show the form below.</p>
+
+<button onclick="hideForm()">Hide Form</button>
+<button onclick="showForm()">Show Form</button>
+
+<form id="myForm">
+  <p>Name: <input type="text"></p>
+  <p>Email: <input type="text"></p>
+  <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>

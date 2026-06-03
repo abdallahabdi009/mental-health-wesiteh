@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Mental Health Myths</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        #moveImage {
+            position: relative;
+            left: 300px;
+            transition: left 0.5s;
+        }
+        #hoverFact {
+            padding: 10px;
+            border: 1px solid gray;
+            width: 500px;
+            color: black;
+        }
+    </style>
+
+    <script>
+        // EVENT 1: onLoad — runs when the page loads
+        function pageLoaded() {
+            alert("Welcome to the Mental Health Myths page. Let's challenge the misconceptions together.");
+        }
+
+        // EVENT 2: onClick — runs when a button is clicked
+        function showFact() {
+            alert("Fact: Mental health problems can affect anyone, regardless of age or background.");
+        }
+
+        // EVENT 3: onMouseOver — runs when mouse hovers over text
+        function changeColour() {
+            document.getElementById("hoverFact").style.color = "blue";
+        }
+
+        // EVENT 4: onSelect — runs when user highlights text in the reflection box
+        function textSelected() {
+            alert("By recognising harmful words, you are taking the first step toward challenging mental health myths.");
+        }
+
+        // Move image functions (from Task 3)
+        function moveImage() {
+            document.getElementById("moveImage").style.left = "0px";
+        }
+        function moveImageBack() {
+            document.getElementById("moveImage").style.left = "300px";
+        }
+    </script>
+</head>
+
+<body onload="pageLoaded()">
+
+<h1><u>Mental Health Myths</u></h1>
+
+<p>
+    There are many misunderstandings about mental health. These myths can stop
+    people from seeking help and may increase stigma around mental health problems.
+</p>
+
+<br><br>
+
+<button onclick="moveImage()">Move image left</button>
+<button onclick="moveImageBack()">Move back</button>
+<br><br>
+
+<img id="moveImage" src="images/myths.png" alt="Illustration of mental health myths being untangled" width="550">
+
+<h2><u>Common Myths</u></h2>
+
+<ul>
+    <li>Mental health problems only affect weak people</li>
+    <li>Young people do not experience mental health issues</li>
+    <li>Talking about mental health makes things worse</li>
+    <li>Mental health problems are rare</li>
+</ul>
+
+<h2><u>Did You Know?</u></h2>
+
+<button onclick="showFact()">Click for a mental health fact</button>
+
+<br><br>
+
+<p id="hoverFact" onmouseover="changeColour()">
+    Hover over this text to highlight it — talking about mental health really does make a difference.
+</p>
+
+<h2><u>Reflect on a Myth</u></h2>
+<p>Write down a mental health myth you have heard before. Highlight any words you feel are most harmful.</p>
+<textarea onselect="textSelected()" rows="3" cols="50" placeholder="Type a myth here..."></textarea>
+
+<h2><u>Why These Myths Are Harmful</u></h2>
+
+<p>
+    Misunderstandings about mental health can sometimes discourage people from
+    speaking openly about their experiences. When myths are widely believed,
+    individuals may feel embarrassed or afraid to ask for help.
+</p>
+
+<h2><u>The Importance of Accurate Information</u></h2>
+
+<p>
+    Education and awareness play an important role in challenging these
+    misconceptions. By learning accurate information about mental health, people
+    can develop a more supportive and understanding attitude toward those
+    experiencing difficulties.
+</p>
+
+<h2><u>Facts</u></h2>
+
+<p>
+    Mental health problems can affect anyone, regardless of age, background,
+    or lifestyle. Talking openly about mental health can help reduce stigma
+    and encourage people to get the support they need.
+</p>
+
+<p>
+    Support, treatment, and healthy coping strategies can make a positive
+    difference. Many people improve when they receive the right help,
+    whether this is through talking to someone they trust, accessing support
+    services, or speaking to a health professional.
+</p>
+
+<p>
+    Talking openly about mental health can help reduce stigma and encourage
+    more people to seek support. When myths are challenged with facts,
+    people are more likely to understand mental health in a realistic
+    and supportive way.
+</p>
+
+
+</body>
+
+</html>
